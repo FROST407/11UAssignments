@@ -5,6 +5,8 @@
 package Assignment1;
 
 import becker.robots.City;
+import becker.robots.Direction;
+import becker.robots.Wall;
 
 /**
  *
@@ -18,11 +20,34 @@ public class A1Q3 {
     public static void main(String[] args) {
         // TODO code application logic here
          City England = new City();
-        new wall(England)
-        
-        
-        
-        
-        
+        new Wall(England, 3, 3, Direction.WEST);
+        new Wall(England, 3, 3, Direction.WEST);
+         new Wall(England, 3, 3, Direction.WEST);
+         new Wall(England, 3, 3, Direction.WEST);
+         new Wall(England, 3, 3, Direction.WEST);
+         new Wall(England, 3, 3, Direction.WEST);
+          new Wall(England, 3, 3, Direction.WEST);
+          new Wall(England, 3, 3, Direction.WEST);
+          new Wall(England, 3, 3, Direction.WEST);
+          new Wall(England, 3, 3, Direction.WEST);
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
     }
 }
