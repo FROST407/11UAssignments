@@ -20,32 +20,51 @@ public class A2Q1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-City Ba = new City();
-Robot Ca = new Robot(Ba,1,1,Direction.EAST);       
-new Thing(Ba,1,2);new Thing(Ba,1,7);        
-new Thing(Ba,1,3);new Thing(Ba,1,8);        
-new Thing(Ba,1,4);new Thing(Ba,1,9);        
-new Thing(Ba,1,5);new Thing(Ba,1,10);        
-new Thing(Ba,1,6);new Thing(Ba,1,11);        
-Ca.move();Ca.pickThing();Ca.move();Ca.pickThing();
-Ca.move();Ca.pickThing();Ca.move();Ca.pickThing();
-Ca.move();Ca.pickThing();Ca.move();Ca.pickThing();
-Ca.move();Ca.pickThing();Ca.move();Ca.move();
-Ca.move();Ca.move();        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        City Ba = new City();
+        Robot Ca = new Robot(Ba, 1, 1, Direction.EAST);
+        new Thing(Ba, 1, 2);
+        new Thing(Ba, 1, 7);
+        new Thing(Ba, 1, 3);
+        new Thing(Ba, 1, 8);
+        new Thing(Ba, 1, 4);
+        new Thing(Ba, 1, 9);
+        new Thing(Ba, 1, 5);
+        new Thing(Ba, 1, 10);
+        new Thing(Ba, 1, 6);
+        new Thing(Ba, 1, 11);
+        //Ca move and pick up seven objects and no more but keep moving forward
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.pickThing();
+        Ca.move();
+        Ca.move();
+        Ca.move();
+        Ca.move();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

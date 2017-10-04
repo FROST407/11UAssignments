@@ -35,9 +35,10 @@ public class A2Q2 {
         new Wall(Bingland, 2, 6, Direction.EAST);
         new Wall(Bingland, 2, 7, Direction.SOUTH);
         new Wall(Bingland, 2, 8, Direction.SOUTH);
-        new Thing(Bingland,2,8);
+        new Thing(Bingland, 2, 8);
         Robot UsaneBolt = new Robot(Bingland, 2, 0, Direction.EAST);
-
+        //UsaneBolt jump over every pilon you encounter and move to the next one but stop
+        //when you are able to pick a thing
         while (!UsaneBolt.canPickThing()) {
             if (UsaneBolt.frontIsClear()) {
                 UsaneBolt.move();
@@ -48,7 +49,7 @@ public class A2Q2 {
                 UsaneBolt.turnLeft();
                 UsaneBolt.turnLeft();
                 UsaneBolt.move();
-                 UsaneBolt.turnLeft();
+                UsaneBolt.turnLeft();
                 UsaneBolt.turnLeft();
                 UsaneBolt.turnLeft();
                 UsaneBolt.move();

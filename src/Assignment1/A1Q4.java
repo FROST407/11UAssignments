@@ -25,7 +25,8 @@ public class A1Q4 {
         new Wall(Junkertown, 1, 1, Direction.WEST);
         new Wall(Junkertown, 1, 1, Direction.SOUTH);
         Robot Junkrat = new Robot(Junkertown, 0, 0, Direction.SOUTH);
-        Robot Roadhog = new Robot(Junkertown, 0, 1, Direction.SOUTH);       
+        Robot Roadhog = new Robot(Junkertown, 0, 1, Direction.SOUTH);
+        //Junkrat take turns with roadhog and reach the same destionation around the same time
         Junkrat.move();
         Roadhog.move();
         Roadhog.turnLeft();
@@ -41,26 +42,26 @@ public class A1Q4 {
         Junkrat.turnLeft();
         Roadhog.move();
         Junkrat.move();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -21,31 +21,38 @@ public class A1Q2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    City Berlin = new City();
-        new Wall(Berlin, 1, 2, Direction.NORTH);    
-        new Wall(Berlin, 1, 2, Direction.SOUTH);    
-        new Wall(Berlin, 1, 2, Direction.EAST);    
-        new Wall(Berlin, 1, 1, Direction.NORTH);    
-        new Wall(Berlin, 1, 1, Direction.WEST);    
+        City Berlin = new City();
+        new Wall(Berlin, 1, 2, Direction.NORTH);
+        new Wall(Berlin, 1, 2, Direction.SOUTH);
+        new Wall(Berlin, 1, 2, Direction.EAST);
+        new Wall(Berlin, 1, 1, Direction.NORTH);
+        new Wall(Berlin, 1, 1, Direction.WEST);
         new Wall(Berlin, 2, 1, Direction.WEST);
         new Wall(Berlin, 2, 1, Direction.SOUTH);
         new Thing(Berlin, 2, 2);
-        
+
         Robot Frost = new Robot(Berlin, 1, 2, Direction.SOUTH);
-        Frost.turnLeft();Frost.turnLeft();Frost.turnLeft();Frost.move();
- Frost.turnLeft();
-        Frost.move();
-   
+        //Go outside
         Frost.turnLeft();
-        
+        Frost.turnLeft();
+        Frost.turnLeft();
         Frost.move();
+        Frost.turnLeft();
+        Frost.move();
+        Frost.turnLeft();
+        Frost.move();
+        //Pick up the news paper and head back inside
         Frost.pickThing();
-        Frost.turnLeft();Frost.turnLeft();
+        Frost.turnLeft();
+        Frost.turnLeft();
         Frost.move();
-        Frost.turnLeft();Frost.turnLeft();Frost.turnLeft();
-          Frost.move();Frost.turnLeft();Frost.turnLeft();
-        Frost.turnLeft();   Frost.move();
+        Frost.turnLeft();
+        Frost.turnLeft();
+        Frost.turnLeft();
+        Frost.move();
+        Frost.turnLeft();
+        Frost.turnLeft();
+        Frost.turnLeft();
+        Frost.move();
     }
 }
-        
-    

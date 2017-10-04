@@ -21,7 +21,9 @@ public class A2Q3 {
         // TODO code application logic here
         City England = new City();
         Robot Frost = new Robot(England, 6, 12, Direction.WEST);
-
+        //Frost check your avenue if you are above your home go down if you are below go up
+        //then look to your street if you are left of your street go right if you are right go left
+        //and stop when you reach your house
         while (Frost.getAvenue() <= 0 && Frost.getDirection() != Direction.SOUTH) {
             Frost.turnLeft();
         }
@@ -34,15 +36,15 @@ public class A2Q3 {
         while (Frost.getStreet() < 0) {
             Frost.move();
         }
-while (Frost.getStreet() <= 0 && Frost.getDirection() != Direction.WEST) {
+        while (Frost.getStreet() <= 0 && Frost.getDirection() != Direction.WEST) {
             Frost.turnLeft();
         }
         while (Frost.getStreet() > 0 && Frost.getDirection() != Direction.EAST) {
             Frost.turnLeft();
         }
-while(Frost.getAvenue()!=0 || Frost.getStreet()!=0) {
-Frost.move();
-    }
+        while (Frost.getAvenue() != 0 || Frost.getStreet() != 0) {
+            Frost.move();
+        }
 
 
 

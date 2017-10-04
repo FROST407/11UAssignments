@@ -20,7 +20,7 @@ public class A2Q4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         City Bingland = new City();
+        City Bingland = new City();
         new Wall(Bingland, 1, 1, Direction.NORTH);
         new Wall(Bingland, 1, 1, Direction.SOUTH);
         new Wall(Bingland, 1, 1, Direction.EAST);
@@ -45,42 +45,45 @@ public class A2Q4 {
         new Wall(Bingland, 4, 4, Direction.NORTH);
         new Wall(Bingland, 4, 4, Direction.EAST);
         new Wall(Bingland, 4, 4, Direction.WEST);
-       
-        Robot UsaneBolt = new Robot(Bingland, 3,1,Direction.NORTH);
-        while (UsaneBolt.frontIsClear()) {
-               UsaneBolt.move();
-            if(!UsaneBolt.frontIsClear());
-               UsaneBolt.turnLeft();
-               UsaneBolt.move();
-                  UsaneBolt.turnLeft();UsaneBolt.turnLeft();UsaneBolt.turnLeft();
-                  UsaneBolt.move();UsaneBolt.move();
-                   UsaneBolt.turnLeft();UsaneBolt.turnLeft();UsaneBolt.turnLeft();
-                    UsaneBolt.move();UsaneBolt.move();
-                    UsaneBolt.turnLeft();UsaneBolt.turnLeft();UsaneBolt.turnLeft();
-                    UsaneBolt.move();UsaneBolt.turnLeft();
-            
-                       
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-        }
-        }
-        
-        
-        
-        
-        
-        
-        
-    }
 
+        Robot UsaneBolt = new Robot(Bingland, 3, 1, Direction.NORTH);
+        //UsaneBolt if your front is clear move forward if not head to
+        //the exact same postion on the north side of the castle past the tower
+        while (UsaneBolt.frontIsClear()) {
+            UsaneBolt.move();
+            if (!UsaneBolt.frontIsClear());
+            UsaneBolt.turnLeft();
+            UsaneBolt.move();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.move();
+            UsaneBolt.move();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.move();
+            UsaneBolt.move();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.turnLeft();
+            UsaneBolt.move();
+            UsaneBolt.turnLeft();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}
