@@ -54,28 +54,31 @@ public class A3A4 {
         new Wall(Dunkirk, 5, 5, Direction.SOUTH);
         new Wall(Dunkirk, 5, 5, Direction.EAST);
         Robot Frost = new Robot(Dunkirk, 3, 3, Direction.SOUTH);
-        //Frost go forward and turn left do this 16 times. When you reach the points 3,7,11,15
-        //when you reach these numbers turn left 3 times
+        //Frost go forward and turn left 16 times. 
         for (int count = 0; count < 16; count = count + 1) {
             Frost.move();
             Frost.move();
             Frost.move();
             Frost.turnLeft();
+            //When you have gone forward and left 3 times turnleft 3 times
             if (count == 3) {
                 Frost.turnLeft();
                 Frost.turnLeft();
                 Frost.turnLeft();
             }
+            //When you have gone forward and left 7 times turnleft 3 times
             if (count == 7) {
                 Frost.turnLeft();
                 Frost.turnLeft();
                 Frost.turnLeft();
             }
+            //When you have gone forward and left 11 times turnleft 3 times
             if (count == 11) {
                 Frost.turnLeft();
                 Frost.turnLeft();
                 Frost.turnLeft();
             }
+            //When you have gone forward and left 15 times turnleft 3 times
             if (count == 15) {
                 Frost.turnLeft();
                 Frost.turnLeft();

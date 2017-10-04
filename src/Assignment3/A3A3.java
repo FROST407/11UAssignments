@@ -21,13 +21,11 @@ public class A3A3 {
         // TODO code application logic here
         City England = new City();
         Robot Frost = new Robot(England, 1, 1, Direction.EAST, 20);
-        //Nick use the seeds in your backpack to plant seeds. Plant seeds until
-        //you reach avenue 5 turn around and go below the seeds you planted and 
-        //plant untill you reach avenue 1 repeat this process 4 times
+        //Nick do this 4 times
         int moveCounter = 0;
         while (moveCounter < 4) {
             moveCounter = moveCounter + 1;
-
+            //Plant 5 seeds in a row
             Frost.putThing();
             Frost.move();
             Frost.putThing();
@@ -37,11 +35,13 @@ public class A3A3 {
             Frost.putThing();
             Frost.move();
             Frost.putThing();
+            //When you reach avenue 1 turn left move and turn left again
             if (Frost.getAvenue() == 1) {
                 Frost.turnLeft();
                 Frost.move();
                 Frost.turnLeft();
             }
+            //When you reach avenue 5 turn left 3 times and move and turn left 3 time again
             if (Frost.getAvenue() == 5) {
                 Frost.turnLeft();
                 Frost.turnLeft();
