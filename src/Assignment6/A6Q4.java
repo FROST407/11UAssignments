@@ -22,13 +22,11 @@ public class A6Q4 {
         // create array to store expenses
         // need 6 spot
         double placeholder = 0;
-        int Buck = 10;
-        // create array to store name of expenses
-        double[] jack = new double[Buck];
-        // put names into array
         System.out.println("Please enter 10 intergers");
+        // create array to store name of expenses
+        double[] jack = new double[10];
         jack[0] = input.nextDouble();
-        jack[1] = input.nextDouble(); 
+        jack[1] = input.nextDouble();
         jack[2] = input.nextDouble();
         jack[3] = input.nextDouble();
         jack[4] = input.nextDouble();
@@ -37,17 +35,30 @@ public class A6Q4 {
         jack[7] = input.nextDouble();
         jack[8] = input.nextDouble();
         jack[9] = input.nextDouble();
-        for (int x = 0; x < jack.length-1; x++) {   
-        for (int y = x+1; y < Buck; y++) {
-             if (jack[0] > jack[1]){
-                placeholder = jack[0] + placeholder;
-                jack[0] = jack[1];
-                jack[1] = placeholder;
-        }
-        }   
+
+        // put names into array
+
+
+        for (int i = 0; i < jack.length; i++) {
+            for (int y = i + 1; y < jack.length; y++) {
+                if (jack[i] > jack[y]) {
+                    placeholder = jack[i];
+                    jack[i] = jack[y];
+                    jack[y] = placeholder;
+                }
+            }
         }
 
-        
-System.out.println("The integers in ascending order are: " + jack[0] + ", " + jack[1]+", " + jack[2] + ", " + jack[3]+ ", " + jack[4] + ", " + jack[5]+ ", " + jack[6] + ", " + jack[7]+ ", " + jack[8] + " and " + jack[9]);
+        System.out.println("The intergers in asending order are: ");
+        for (int i = 0; i < jack.length; i++) {
+
+
+            if (i != jack.length - 1) {
+                System.out.print(jack[i] + ", ");
+            } else {
+                System.out.print("and " + jack[9]);
+            }
+
+        }
     }
 }

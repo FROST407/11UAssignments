@@ -28,18 +28,18 @@ public class A6Q3 {
         System.out.println("Please enter 2 intergers");
         jack[0] = input.nextDouble();
         jack[1] = input.nextDouble();
-        for (int i = 0; i < jack.length-1; i++) {   
-        for (int y = i+1; y < 10; y++) {
-             if (jack[0] > jack[1]){
-                placeholder = jack[0] + placeholder;
-                jack[0] = jack[1];
-                jack[1] = placeholder;
-             }
+        for (int i = 0; i < jack.length - 1; i++) {
+            for (int y = i + 1; y < 10; y++) {
+                if (jack[0] > jack[1]) {
+                    placeholder = jack[0] + placeholder;
+                    jack[0] = jack[1];
+                    jack[1] = placeholder;
+                }
+            }
         }
-        }
-            System.out.println("The integers in ascending order are: "+ jack[0]+ ", "+jack[1] );
-    
+        System.out.println("The integers in ascending order are: " + jack[0] + ", " + jack[1]);
 
-        
+
+
     }
 }
