@@ -22,9 +22,13 @@ public class A6Q6 {
         // create array to store expenses
         // need 6 spot
         double placeholder = 0;
-        System.out.println("Please enter the amount of intergers you would like to use.");
+        System.out.println("Please enter the amount of students in your class.");
         int AmtIntergers = input.nextInt();
-       System.out.println("Please enter "+ AmtIntergers +" intergers");
+     
+           
+        
+       System.out.println("Please enter the "+ AmtIntergers +" student scores");
+        
         // create array to store name of expenses
         double[] Intergers = new double[AmtIntergers];
        
@@ -34,9 +38,6 @@ public class A6Q6 {
             // storing the expense
             Intergers[i] = input.nextDouble();
         }
-      
-
-
         for (int i = 0; i < Intergers.length; i++) {
             for (int y = i + 1; y < Intergers.length; y++) {
                 if (Intergers[i] > Intergers[y]) {
@@ -45,19 +46,18 @@ public class A6Q6 {
                     Intergers[y] = placeholder;
                 }
             }
+        } 
+        System.out.println("The highest mark in the class is ");
+        System.out.println(Intergers[Intergers.length-1]);
+        System.out.println("The lowest mark in the class is ");
+        System.out.println(Intergers[0]);
+        for (int i = 0; i <AmtIntergers-1 ; i++) {
+            double Total = Intergers[i]+Intergers[i+1];
+            
         }
-
+     Total1 =Total/AmtIntergers;
+        System.out.println(" and the averge is " + Intergers[Total1]);
         
-        System.out.println("The intergers in asending order are: ");
-        for (int i = 0; i < Intergers.length; i++) {
-
-
-            if (i != Intergers.length - 1) {
-                System.out.print(Intergers[i] + ", ");
-            } else {
-                System.out.print("and " + Intergers[i]);
-            }
-
-        }
+       
     }
 }
