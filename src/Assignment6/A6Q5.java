@@ -61,16 +61,17 @@ public class A6Q5 {
 
         }
          if (Intergers.length%2==0) {
-            double Total1 = Intergers.length/2;
-            double Total3 = Total1-1;
-            double Total124 = Total1+1;
-            double Total4 =Intergers[Total124]+Intergers[Total3];
+            
+            double Total1 = AmtIntergers/2;
+            double Total3 = Intergers[(int)Total1-1];
+            double Total124 = Intergers[(int)Total1];
+            double Total4 =Total124+Total3;
             double Total7 =Total4/2;
-            double Total5 =Total7;
-             System.out.println("The median is " + Intergers[Total5]);
-        }else{
+          
+             System.out.println(" and the median is " + (double)Total7);
+            }else{
         int Total = Intergers.length/2;
-        System.out.println(" The median is " + Intergers[Total]);
+        System.out.println(" and the median is " + Intergers[Total]);
         }
      
     }
