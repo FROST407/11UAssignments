@@ -51,12 +51,15 @@ public class A6Q6 {
         System.out.println(Intergers[Intergers.length-1]);
         System.out.println("The lowest mark in the class is ");
         System.out.println(Intergers[0]);
-        for (int i = 0; i <AmtIntergers-1 ; i++) {
-            double Total = Intergers[i]+Intergers[i+1];
-            
+        double Total=0;
+        for (int i = 0; i < Intergers.length; i++) {
+            // add expense to total
+            Total = Total + Intergers[i];
         }
-     Total1 =Total/AmtIntergers;
-        System.out.println(" and the averge is " + Intergers[Total1]);
+      
+     double Total1 = Total/AmtIntergers;
+    
+        System.out.println("and the averge is " + Total1);
         
        
     }
