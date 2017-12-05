@@ -22,15 +22,22 @@ public class A6Q7 {
         int AmtNum = 999;
 
         double[] Numbers = new double[AmtNum];
+        
         for (int i = 0; i <Numbers.length; i++) {
             Numbers[i] = i+2;
         }
-        for (int i = 0; i <Numbers.length; i++) {
-            for (int j = 2; j < Numbers.length; j++) {      
-        Numbers[i] = Numbers[i]*j;
         
+        for (int i = 2; i < Numbers.length; i++) {
+            for (int j = 3; j < 10; j++) {
+                
+            }
+        if i*j=Numbers[i] && i!=j{
+            Numbers[i]=0;
         }
-        }  
+                
+                        }
+        
+        
         System.out.println("The prime numbers from 2-1000 are ");
         for (int i = 0; i < Numbers.length; i++) {
         System.out.println(Numbers[i]+", ");
