@@ -24,39 +24,39 @@ public class A6Q4 {
         double placeholder = 0;
         System.out.println("Please enter 10 intergers");
         // create array to store name of expenses
-        double[] jack = new double[10];
-        jack[0] = input.nextDouble();
-        jack[1] = input.nextDouble();
-        jack[2] = input.nextDouble();
-        jack[3] = input.nextDouble();
-        jack[4] = input.nextDouble();
-        jack[5] = input.nextDouble();
-        jack[6] = input.nextDouble();
-        jack[7] = input.nextDouble();
-        jack[8] = input.nextDouble();
-        jack[9] = input.nextDouble();
+        double[] Array = new double[10];
+        Array[0] = input.nextDouble();
+        Array[1] = input.nextDouble();
+        Array[2] = input.nextDouble();
+        Array[3] = input.nextDouble();
+        Array[4] = input.nextDouble();
+        Array[5] = input.nextDouble();
+        Array[6] = input.nextDouble();
+        Array[7] = input.nextDouble();
+        Array[8] = input.nextDouble();
+        Array[9] = input.nextDouble();
 
         // put names into array
 
 
-        for (int i = 0; i < jack.length; i++) {
-            for (int y = i + 1; y < jack.length; y++) {
-                if (jack[i] > jack[y]) {
-                    placeholder = jack[i];
-                    jack[i] = jack[y];
-                    jack[y] = placeholder;
+        for (int i = 0; i < Array.length; i++) {
+            for (int y = i + 1; y < Array.length; y++) {
+                if (Array[i] > Array[y]) {
+                    placeholder = Array[i];
+                    Array[i] = Array[y];
+                    Array[y] = placeholder;
                 }
             }
         }
 
         System.out.println("The intergers in asending order are: ");
-        for (int i = 0; i < jack.length; i++) {
+        for (int i = 0; i < Array.length; i++) {
 
 
-            if (i != jack.length - 1) {
-                System.out.print(jack[i] + ", ");
+            if (i != Array.length - 1) {
+                System.out.print(Array[i] + ", ");
             } else {
-                System.out.print("and " + jack[9]);
+                System.out.print("and " + Array[9]);
             }
 
         }

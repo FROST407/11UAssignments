@@ -17,31 +17,42 @@ public class A6Q7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner input = new Scanner(System.in);
 
-        int AmtNum = 999;
 
-        double[] Numbers = new double[AmtNum];
+        int AmtNum = 1001;
+
+        int[] Numbers = new int[AmtNum];
 
         for (int i = 0; i < Numbers.length; i++) {
             Numbers[i] = i + 2;
         }
 
-        for (int i = 2; i < Numbers.length; i++) {
-            for (int j = 3; j < 10; j++) {
 
+        for (int k = 0; k < Numbers.length; k++) {
+            if (Numbers[k] != 0) {
+                int PrimeNumbers = Numbers[k];
 
-                if (i * j == Numbers[i] && i != j) {
-                    Numbers[i] = 0;
+                for (int i = 2; i * PrimeNumbers < Numbers.length; i++) {
+                    Numbers[i * PrimeNumbers - 2] = 0;
+
                 }
             }
         }
 
 
-        System.out.println("The prime numbers from 2-1000 are ");
-        for (int i = 0; i < Numbers.length; i++) {
-            System.out.println(Numbers[i] + ", ");
 
+
+
+        System.out.println("The prime numbers from 2-1000 are ");
+
+
+        for (int i = 0; i < 1001; i++) {
+            if (Numbers[i] != 0) {
+
+
+                System.out.println(Numbers[i] + ", ");
+            }
         }
+
     }
 }
