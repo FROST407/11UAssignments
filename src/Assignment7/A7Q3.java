@@ -12,11 +12,12 @@ import java.util.Scanner;
  */
 public class A7Q3 {
 public static void factorizer(int factor){
+    System.out.println("The factors of "+factor+ " are");
     for (int i = 1; i <= factor; i++) {
         
     
  if (factor%i==0) {
-     System.out.println(i+',');   
+     System.out.println( i +",");   
  }
  }
  
@@ -30,8 +31,8 @@ public static void factorizer(int factor){
         // TODO code application logic here
           Scanner input = new Scanner(System.in);
           System.out.println("Please enter a number you would like to be factorized. ");
-        int theinput = input.nextInt();
-        test.factorizer(theinput);
+        int userinput = input.nextInt();
+        test.factorizer(userinput);
         
     }
 }
