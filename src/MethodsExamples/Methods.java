@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Methods;
+package MethodsExamples;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Methods {
     System.out.println("Hello " + name);
     }
     
-    public void addFive(int a)
+   
     
     public double areaOfRect(double length, double widith){
      double answer = length * widith;
@@ -43,6 +43,6 @@ public class Methods {
         double b = input.nextDouble();
         double area = test.areaOfRect(a,b);
         int num =10;
-        test.addFive()
+        
     }
 }
