@@ -42,6 +42,8 @@ public class SNAKE extends JComponent {
     boolean ball1Left = false;
     int gameSpeed = 5;
     Font biggerFont = new Font("arial", Font.BOLD, 42);
+    int[] foodHolder = new int[100];
+    
     // GAME VARIBLES END HERE   
 
     // Constructor to create the Frame and place the panel in
@@ -78,9 +80,7 @@ public class SNAKE extends JComponent {
     public void paintComponent(Graphics g) {
         // always clear the screen first!
 
-        boolean done = false;
-        while (!done) {
-
+      
             // GAME DRAWING GOES HERE
             g.setColor(Color.blue);
 
@@ -93,18 +93,24 @@ public class SNAKE extends JComponent {
             g.setFont(biggerFont);
             if (ball.y >= HEIGHT - 40 || ball.y <= 15 || ball.x >= WIDTH - 40 || ball.x <= 15) {
                 g.drawString("Game Over", WIDTH / 2 - 100, HEIGHT / 2);
-                done = true;
+              
             }
             g.setColor(Color.yellow);
             g.fillRect(ball.x, ball.y, ball.width, ball.height);
             // GAME DRAWING ENDS HERE
-        }
+        
     }
 
     // This method is used to do any pre-setup you might need to do
     // This is run before the game loop begins!
     public void preSetup() {
         // Any of your pre setup before the loop starts should go here
+        
+        for (int i = 0; i < foodHolder.length; i++) {
+                 foodHolder[i] = new Rectangle(WIDTH / 2 - ballSize / 2, HEIGHT / 2 - ballSize / 2, ballSize, ballSize);
+        }
+        
+        
     }
 
     // The main game loop
@@ -119,8 +125,7 @@ public class SNAKE extends JComponent {
 
         // the main game loop section
         // game will end if you set done = false;
-        boolean done = false;
-        while (!done) {
+        
             // determines when we started so we can keep a framerate
             startTime = System.currentTimeMillis();
 
@@ -156,7 +161,7 @@ public class SNAKE extends JComponent {
                 }
             } catch (Exception e) {
             };
-        }
+        
     }
 
     // Used to implement any of the Mouse Actions
